@@ -21,6 +21,7 @@ export class AppController {
   @Get()
   @Version([VERSION_NEUTRAL, '1'])
   findAll() {
+    console.log('');
     return this.appService.findAll();
   }
 
