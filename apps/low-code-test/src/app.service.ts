@@ -7,6 +7,6 @@ export class AppService {
   }
 
   findAll(): string {
-    return 'Hello World! Version 1';
+    return 'findAll';
   }
 }
