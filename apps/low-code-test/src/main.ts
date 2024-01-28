@@ -28,10 +28,10 @@ async function bootstrap() {
   generateDocument(app);
 
   // 添加热更新
-  if (module.hot) {
-    module.hot.accept();
-    module.hot.dispose(() => app.close());
-  }
+  // if (module.hot) {
+  //   module.hot.accept();
+  //   module.hot.dispose(() => app.close());
+  // }
 
   await app.listen(3000);
 }
