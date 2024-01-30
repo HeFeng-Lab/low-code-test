@@ -9,6 +9,7 @@
     "build": "nest build",
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
     "start": "turbo run dev",
+    "start:user": "cross-env RUNNING_ENV=dev nest start user --watch",
     "start:hotdev": "cross-env RUNNING_ENV=dev nest build --webpack --webpackPath webpack-hmr.config.js --watch",
     "start:lowcode": "cross-env RUNNING_ENV=dev nest start --watch",
     "start:devops": "cross-env RUNNING_ENV=dev nest start devops --watch",
