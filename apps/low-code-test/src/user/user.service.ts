@@ -1,5 +1,5 @@
-import { In, Like, Raw, MongoRepository } from 'typeorm';
-import { Injectable, Inject } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
+import { MongoRepository } from 'typeorm';
 import { User } from './user.mongo.entity';
 
 @Injectable()
