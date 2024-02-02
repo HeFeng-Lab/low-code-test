@@ -1,10 +1,8 @@
+import { getConfig } from '@app/common';
 import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ConfigModule } from '@nestjs/config';
-import { getConfig } from '@app/common';
-import { UserModule } from './user/user.module';
-import { UserService } from './user/user.service';
 
 @Module({
   imports: [
@@ -13,7 +11,6 @@ import { UserService } from './user/user.service';
       isGlobal: true,
       load: [getConfig],
     }),
-    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
